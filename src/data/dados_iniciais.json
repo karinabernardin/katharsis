@@ -1,0 +1,120 @@
+{
+  "categorias": [
+    {
+      "titulo": "Animation",
+      "link": "https://www.alura.com.br/formacao-front-end",
+      "cor": "#E4BB2F",
+      "link_extra": {
+        "text": "Formação de Front End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      },
+      "videos": [
+        {
+          "titulo": "The philosophy of Miyazaki",
+          "url": "https://www.youtube.com/watch?v=es8iacHu1PA&t=101s"
+        },
+        {
+          "titulo": "The year of Yuasa",
+          "url": "https://www.youtube.com/watch?v=ohsvE8UdEd0"
+        },
+        {
+          "titulo": "A ghost of its own:",
+          "url": "https://www.youtube.com/watch?v=LdhCv8_GdB0&t=866s"
+        },
+        {
+          "titulo": "Idol: The terrifying reality of Perfect Blue",
+          "url": "https://www.youtube.com/watch?v=WAcb_57r1Bo"
+        },
+        {
+          "titulo": "A Silent Voice: The Sound of Silence",
+          "url": "https://www.youtube.com/watch?v=aCBLgZrXJ8w"
+        },
+        {
+          "titulo": "Expectations & The Potential of A Burnt Field - Sangatsu no Lion",
+          "url": "https://www.youtube.com/watch?v=Uu7G5UI2wK0"
+        },
+        {
+          "titulo": "The Thematic Duality of Fireworks in A Silent Voice",
+          "url": "https://www.youtube.com/watch?v=ioXD382TEYs"
+        },
+        {
+          "titulo": "Goodnight Punpun - A Despairing Cycle",
+          "url": "https://www.youtube.com/watch?v=ewfEOUxUd0g"
+        }        
+      ]
+    },
+    {
+      "titulo": "Movies",
+      "link": "https://www.alura.com.br/formacao-front-end",
+      "cor": "#E4BB2F",
+      "link_extra": {
+        "text": "Formação de Front End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      },
+      "videos": [
+        {
+          "titulo": "Arrival: A Response To Bad Movies",
+          "url": "https://www.youtube.com/watch?v=z18LY6NME1ss"
+        },
+        {
+          "titulo": "What The Truman Show Teaches Us About Politics",
+          "url": "https://www.youtube.com/watch?v=cLJAXu5OD-c"
+        },
+        {
+          "titulo": "The Darjeeling Limited: How Brothers Communicate",
+          "url": "https://www.youtube.com/watch?v=kOzJcb1BLvM"
+        },
+        {
+          "titulo": "Blade Runner: The Other Side of Modernity",
+          "url": "https://www.youtube.com/watch?v=GXRlGULqHxg"
+        },
+        {
+          "titulo": "Ghost In The Shell: Identity in Space",
+          "url": "https://www.youtube.com/watch?v=gXTnl1FVFBw"
+        },
+        {
+          "titulo": "Moonrise Kingdom: The Power of Rituals",
+          "url": "https://www.youtube.com/watch?v=o_0hiG8w3WE"
+        },
+        {
+          "titulo": "Moonrise Kingdom and the Freedom from Norms | Video Essay",
+          "url": "https://www.youtube.com/watch?v=JElNXUy_bnY"
+        },
+        {
+          "titulo": "Gaze Into the Abyss - Nihilism in Rick and Morty & BoJack Horseman",
+          "url": "https://www.youtube.com/watch?v=PsotfzGpby8"
+        }        
+      ]
+    },
+    {
+      "titulo": "Soundtracks",
+      "cor": "#E4BB2F",
+      "link_extra": {
+        "text": "Cursos de Back End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-programacao"
+      },
+      "videos": [
+        {
+          "titulo": "The Departure",
+          "url": "https://www.youtube.com/watch?v=DmQmepDPg6I"
+        },
+        {
+          "titulo": "On The Nature Of Daylight",
+          "url": "https://www.youtube.com/watch?v=InyT9Gyoz_o&t=164s"
+        },
+        {
+          "titulo": "Time",
+          "url": "https://www.youtube.com/watch?v=jgyShFzdB_Q"
+        },
+        {
+          "titulo": "The Moon Song",
+          "url": "https://www.youtube.com/watch?v=SU6KFnGF9M8"
+        }, 
+        {
+          "titulo": "Spirits of the Sea",
+          "url": "https://www.youtube.com/watch?v=1s84rIhPuhk"
+        }
+      ]
+    }
+  ]
+}
