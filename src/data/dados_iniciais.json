@@ -2,13 +2,12 @@
   "categorias": [
     {
       "titulo": "Animation",
-      "link": "https://www.alura.com.br/formacao-front-end",
       "cor": "#E4BB2F",
-      "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      },
       "videos": [
+        {
+          "titulo": "The delicacy of character within Avatar: The Last Airbender",
+          "url": "https://www.youtube.com/watch?v=W_UQ5RI38Qc"
+        },
         {
           "titulo": "The philosophy of Miyazaki",
           "url": "https://www.youtube.com/watch?v=es8iacHu1PA&t=101s"
@@ -18,7 +17,7 @@
           "url": "https://www.youtube.com/watch?v=ohsvE8UdEd0"
         },
         {
-          "titulo": "A ghost of its own:",
+          "titulo": "A ghost of its own",
           "url": "https://www.youtube.com/watch?v=LdhCv8_GdB0&t=866s"
         },
         {
@@ -45,12 +44,7 @@
     },
     {
       "titulo": "Movies",
-      "link": "https://www.alura.com.br/formacao-front-end",
       "cor": "#E4BB2F",
-      "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      },
       "videos": [
         {
           "titulo": "Arrival: A Response To Bad Movies",
@@ -89,10 +83,6 @@
     {
       "titulo": "Soundtracks",
       "cor": "#E4BB2F",
-      "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
-      },
       "videos": [
         {
           "titulo": "The Departure",
