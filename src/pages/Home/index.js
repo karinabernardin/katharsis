@@ -2,11 +2,13 @@ import React from 'react';
 import dadosIniciais from '../../data/dados_iniciais.json';
 import BannerMain from '../../components/BannerMain';
 import Carousel from "../../components/Carousel";
-import PageDefault from "../../components/PageDefault";
+import Menu from '../../components/Menu';
+import Footer from '../../components/Footer';
 
 function Home() {
   return (
-    <PageDefault style={{ background: "#141414" }}>
+    <div style={{ background: "#141414" }}>
+      <Menu />
 
       <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
@@ -28,7 +30,8 @@ function Home() {
         ignoreFirstVideo
         category={dadosIniciais.categorias[2]}
       />
-    </PageDefault>
+      <Footer />
+    </div>
   );
 }
 
