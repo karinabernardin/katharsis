@@ -5,32 +5,45 @@ import { Link } from 'react-router-dom'
 // every component is a function!
 function CategoryRegistration() {
     // States!!!
-    // categoryName: variable representing the name of the category;
-    // setCategoryName: function that allows us to change the name of the category;
-    // Movies: the initial value of categoryName.
-    const [categoryName, setCategoryName] = useState('Movies');
-    const [categories, setCategories] = useState(['Category 1']);
+    // categoryValues: variable representing the values  of the category object;
+    // setCategoryValues: function that allows us to change the values of the category object;
+    // initialCategoryValues: the initial values of the categoryValues object.
+    const initialCategoryValues = {
+      name: 'Animation',
+      description: 'Great animated stuff from all around the world.',
+      color: '#E4BB2F'
+    }
+    const [categoryValues, setCategoryValues] = useState(initialCategoryValues);
+    const [categories, setCategories] = useState([initialCategoryValues]);
+
+    function setCategoryValue(key, value) {
+      setCategoryValues({
+        ...categoryValues,
+        [key] : value
+      })
+    }
+
+    function onChangeCategoryHandler(eventInformation) {
+      setCategoryValue(eventInformation.target.getAttribute('name'), eventInformation.target.value);
+    }
   
     return(
       <PageDefault>
-        <h1>Category Registration: {categoryName}</h1>
+        <h1>Category Registration: {categoryValues.name}</h1>
 
         <form onSubmit={function handleSubmit(eventInformation) {
           eventInformation.preventDefault();
-          setCategories([...categories, categoryName]);
+          setCategories([...categories, categoryValues]);
         }}>
 
         <div>
             <label>
               Category Name:
               <input
-                type="text"
-                value={categoryName}
-                onChange={function categoryNameHandler(eventInformation) {
-                  console.log('[categoryName]', categoryName);
-                  console.log('[eventInformation.target.value]', eventInformation.target.value);
-                  setCategoryName(eventInformation.target.value);
-                }}
+                type='text'
+                name='name'
+                value={categoryValues.name}
+                onChange={onChangeCategoryHandler}
                 />
             </label>
           </div>
@@ -39,28 +52,22 @@ function CategoryRegistration() {
             <label>
               Description:
               <textarea
-                type="text"
-                value={categoryName}
-                onChange={function categoryNameHandler(eventInformation) {
-                  console.log('[categoryName]', categoryName);
-                  console.log('[eventInformation.target.value]', eventInformation.target.value);
-                  setCategoryName(eventInformation.target.value);
-                }}
+                type='text'
+                name='description'
+                value={categoryValues.description}
+                onChange={onChangeCategoryHandler}
                 />
             </label>
           </div>    
-                 
+
           <div>
             <label>
               Color:
               <input
-                type="color"
-                value={categoryName}
-                onChange={function categoryNameHandler(eventInformation) {
-                  console.log('[categoryName]', categoryName);
-                  console.log('[eventInformation.target.value]', eventInformation.target.value);
-                  setCategoryName(eventInformation.target.value);
-                }}
+                type='color'
+                name='color'
+                value={categoryValues.color}
+                onChange={onChangeCategoryHandler}
                 />
             </label>
         </div>
@@ -75,8 +82,8 @@ function CategoryRegistration() {
           {categories.map((category, index) => {
             return (
               // key chosen to be unique
-              <li key={`${category}${index}`}>
-                {category}
+              <li key={`${category.name}${index}`}>
+                {category.name}
               </li>
             );
           })}
