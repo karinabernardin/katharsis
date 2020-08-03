@@ -9,12 +9,12 @@ function CategoryRegistration() {
     // setCategoryValues: function that allows us to change the values of the category object;
     // initialCategoryValues: the initial values of the categoryValues object.
     const initialCategoryValues = {
-      name: 'Animation',
-      description: 'Great animated stuff from all around the world.',
+      name: '',
+      description: '',
       color: '#E4BB2F'
     }
-    const [categoryValues, setCategoryValues] = useState(initialCategoryValues);
     const [categories, setCategories] = useState([initialCategoryValues]);
+    const [categoryValues, setCategoryValues] = useState(initialCategoryValues);
 
     function setCategoryValue(key, value) {
       setCategoryValues({
@@ -34,6 +34,8 @@ function CategoryRegistration() {
         <form onSubmit={function handleSubmit(eventInformation) {
           eventInformation.preventDefault();
           setCategories([...categories, categoryValues]);
+          // cleaning the forms after submit
+          setCategoryValues(initialCategoryValues);
         }}>
 
         <div>
